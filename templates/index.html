@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="masthead hidden-desktop">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="masthead-inner">
+                    <h1>Home</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="feature" class="hidden-phone">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div id="carousel">
+                    <div class="span12">
+                        <img class="img-front" src="static/img/umedia01.png" alt="umedia1"/>
+                        <img class="img-back" src="static/img/umedia02.png" alt="umedia2"/>
+
+                        <h3>UMedia</h3>
+
+                        <p>Media Player for Ubuntu.
+                            <br/>
+                            <a href="https://github.com/saruneko/UMedia" class="btn btn-inverse">Source Code &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="span12">
+                        <img class="img-front" src="static/img/tori01.png" alt="tori1"/>
+                        <img class="img-back" src="static/img/tori02.png" alt="tori2"/>
+
+                        <h3>Tori</h3>
+
+                        <p>Twitter Client for Ubuntu.
+                            <br/>
+                            <a href="https://github.com/saruneko/tori" class="btn btn-info">Source Code &raquo;</a></p>
+                    </div>
+                    <div class="span12">
+                        <img class="img-front" src="static/img/tvstalker01.png" alt="tvstalker01"/>
+                        <img class="img-back" src="static/img/tvstalker02.png" alt="tvstalker02"/>
+
+                        <h3>TvStalker</h3>
+
+                        <p>Follow your Tv Shows, check the airdates, share your shows with your friends and never miss an episode again!.
+                            <br/>
+                            <a href="http://www.tvstalker.tv/" class="btn btn-success">Visit site &raquo;</a></p>
+                    </div>
+                </div>
+                <a id="prev" href="#"><i class="icon-chevron-left"></i></a>
+                <a id="next" href="#"><i class="icon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end feature-->
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <div class="home-content">
+                    <h2>Latest Projects</h2>
+
+                    <div class="row">
+                        <div class="span4">
+                            <article>
+                                <a href="https://github.com/saruneko/tori" class="image">
+                                    <img src="http://placehold.it/370x200/F15A24/fff&text=Tori" alt="">
+                                </a>
+
+                                <div class="text">
+                                    <h3>Tori</h3>
+
+                                    <p class="meta">
+                                        <a href="https://github.com/saruneko/tori">Source Code</a>
+                                    </p>
+
+                                    <p>
+                                        This project aims to create an awesome Twitter Client for Ubuntu,
+                                        taking care of every detail in the User Interface and the User
+                                        Experience.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="span4">
+                            <article>
+                                <a href="https://github.com/saruneko/UMedia" class="image">
+                                    <img src="http://placehold.it/370x200/81BC2E/fff&text=UMedia" alt="">
+                                </a>
+
+                                <div class="text">
+                                    <h3>UMedia</h3>
+
+                                    <p class="meta">
+                                        <a href="https://github.com/saruneko/UMedia">Source Code</a>
+                                    </p>
+
+                                    <p>
+                                        A really cool and lightweight media player, with a look and feel
+                                        similar to the media application for mobile devices, and devices
+                                        with touch screen.
+                                        UMedia also provides integration with the Ubuntu One Music Store!
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="home-content">
+                    <h2>Latest Websites</h2>
+
+                    <div class="row">
+                        <div class="span4">
+                            <article>
+                                <a href="http://www.tvstalker.tv" class="image">
+                                    <img src="http://placehold.it/370x200/276195/fff&text=TvStalker" alt="">
+                                </a>
+
+                                <div class="text">
+                                    <h3>TvStalker</h3>
+
+                                    <p class="meta">
+                                        <a href="http://www.tvstalker.tv">Visit site</a>
+                                    </p>
+
+                                    <p>
+                                        Follow your Tv Shows, check the airdates, share your shows
+                                        with your friends and never miss an episode again!
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end main-->
+{% endblock %}

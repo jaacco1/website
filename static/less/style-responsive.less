@@ -1,0 +1,137 @@
+/*
+================== Responsive ======================
+*/
+
+@media (max-width: 767px) {
+
+  #menu-toggle {
+    border-radius: 4px;
+    margin-top: 7px;
+    display: inline-block;
+  }
+
+  .main,
+  .footer,
+  .bottom {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-top: 0;
+  }
+
+  .main-header {
+    .header-bar {
+      height: auto;
+      line-height: normal;
+      margin-bottom: 10px;
+
+      .header-bar-inner {
+        padding: 5px 20px;
+
+        .row-fluid .span9 {
+          min-height: 0;
+        }
+      }
+    }
+  }
+
+  .main-header .header-bar .header-bar-inner .logo {
+    float: none;
+    height: auto;
+  }
+
+  .main-header .header-bar .header-bar-inner .nav-main {
+    float: none;
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+
+    ul li {
+      float: none;
+      display: block;
+      line-height: normal;
+      margin-right: 0;
+
+      a {
+        display: block;
+        margin-bottom: 0px;
+        margin: 10px 0;
+        background-color: #e5e5e5;
+      }
+    }
+  }
+
+  .footer #email2 {
+    min-height: 26px !important;
+    padding: 0;
+  }
+
+  .masthead {
+    margin-top: 45px;
+    border: 1px solid #DBDAD7;
+    .border-radius(4px);
+
+    .masthead-inner {
+      padding: 0;
+
+      #heading-sub-title {
+        position: relative;
+      }
+    }
+  }
+
+  #team {
+    background-color: transparent;
+    background-image: none;
+
+    #profiles .profile {
+      #gradient > .vertical(#54595d, #222);
+      margin-bottom: 6px;
+      .border-radius(6px);
+      z-index: 0;
+      position: relative;
+      padding: 10px 10px 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        border: 1px dashed rgba(255, 255, 255, 0.3);
+        .border-radius(2px);
+        top: 5px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+      }
+
+      .image {
+        float: left;
+        margin-left: 6px;
+      }
+
+      .bio {
+        height: auto !important;
+        padding: 16px;
+        max-width: none;
+      }
+
+      .info {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .plan-container {
+    margin: 0 auto;
+
+    .popular-plan {
+      top: 0;
+    }
+  }
+}

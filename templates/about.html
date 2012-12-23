@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="masthead">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="masthead-inner">
+                    <h1>ABOUT</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end masthead-->
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h2>What is Saruneko?</h2>
+
+                <p>
+                    Saruneko is the name of the Team that we have created to
+                    develop awesome applications specially designed for Linux,
+                    with an incredible User Interface and User Experience.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end main-->
+
+
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div id="profiles">
+                <div class="profile span3"></div>
+                <div class="profile span3">
+                    <div class="image">
+                        <img src="static/img/mandel.png" alt="man" class="img-circle">
+                    </div>
+                    <div class="info">
+                        <p class="name">Manuel de la Peña</p>
+
+                        <p class="title">Spanish, rugby, Belgian beer, sailing, code. Software Engineer at Canonical</p>
+                        <a class="twitter" href="http://twitter.com/mandel_macaque">@mandel_macaque</a>
+                    </div>
+                </div>
+                <div class="profile span3">
+                    <div class="image">
+                        <img src="static/img/diego.png" alt="man" class="img-circle">
+                    </div>
+                    <div class="info">
+                        <p class="name">Diego Sarmentero</p>
+
+                        <p class="title">Creator and Developer of NINJA-IDE.<br> Software Engineer at Canonical</p>
+                        <a class="twitter" href="https://twitter.com/diegosarmentero">@diegosarmentero</a>
+                    </div>
+                </div>
+                <div class="profile span3"></div>
+<!--
+                <div id="team-bios" class="hidden-phone">
+                    <a href="#team">View Bio's</a>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--end team-->
+{% endblock %}

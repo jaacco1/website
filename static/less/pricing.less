@@ -1,0 +1,100 @@
+/*
+======================== Pricing ========================
+*/
+
+.plan-container {
+  margin: 40px auto;
+  text-align: center;
+  .ie7-inline-block();
+
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both
+  }
+
+  .plan {
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 20px;
+    position: relative;
+    .box-shadow(0 2px 2px -1px rgba(0,0,0,.3));
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .header {
+      position: relative;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 40px;
+      margin: -20px -20px 20px -20px;
+      border-bottom: 8px solid;
+      #gradient > .vertical(#fff,#eee);
+
+      &:after {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        content: '';
+      }
+    }
+
+    &.popular-plan {
+      top: -20px;
+      padding: 40px 20px;
+
+      .header {
+        margin-top: -40px;
+        padding-top: 60px;
+      }
+    }
+
+    &.plan1 .header {
+      border-bottom-color: #333;
+    }
+    &.plan2 .header {
+      border-bottom-color: #555;
+    }
+    &.plan3 .header {
+      border-bottom-color: #777;
+    }
+    &.plan4 .header {
+      border-bottom-color: #999;
+    }
+
+    .price {
+      font-size: 45px;
+    }
+
+    .monthly {
+      font-size: 13px;
+      margin-bottom: 20px;
+      margin-top: 16px;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    ul {
+      margin: 20px 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding: 10px 0;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

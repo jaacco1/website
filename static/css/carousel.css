@@ -1,0 +1,87 @@
+/* 
+    Document   : carousel
+    Created on : Jul 22, 2012, 1:28:18 AM
+    Author     : ono
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#carousel, #carousel > div {
+    height: 350px;
+}
+
+#carousel {
+    position: relative;
+    z-index: 2;
+}
+
+#carousel div {
+    position: relative;
+}
+
+#carousel div > * {
+    position: absolute;
+}
+
+#carousel img.img-front {
+    left: 30px;
+    top: 0;
+    z-index: 4;
+}
+
+#carousel img.img-back {
+    left: 300px;
+    top: 50px;
+    z-index: 3;
+}
+
+#carousel h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    width: 300px;
+    left: 675px;
+    top: 110px;
+    margin: 0;
+}
+
+#carousel p {
+    color: #666;
+    font-size: 16px;
+    width: 275px;
+    left: 675px;
+    top: 150px;
+    margin: 0;
+}
+
+#carousel a.btn {
+    left: 700px;
+    top: 260px;
+    display: block;
+    color: #fff;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 175px;
+    z-index: 10;
+    color: #999;
+    font-size: 40px;
+    outline: 0 none;
+}
+
+#prev:focus, #next:focus {
+    outline: 0 none;
+}
+
+#prev {
+    left: 25px;
+}
+
+#prev:hover i, #next:hover i {
+    color: #fff;
+}
+
+#next {
+    right: 25px;
+}

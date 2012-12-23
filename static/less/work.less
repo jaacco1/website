@@ -1,0 +1,65 @@
+/*
+========================== Work ================
+*/
+#workFilter {
+  background-color: #fff;
+  width: 100%;
+
+  #filter {
+    padding-top: 20px;
+  }
+}
+
+#work {
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
+
+  #work-list {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  article {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    vertical-align: top;
+
+    .image {
+      background: #f2f2f2;
+      border: 1px solid #d5d5d5;
+      .border-radius(3px);
+      .box-shadow(0 1px 0 0 #ffffff inset);
+      display: block;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: #EEEEEE;
+        .box-shadow(0 1px 10px 0 rgba(0, 0, 0, 0.2) inset);
+      }
+    }
+
+    .text {
+
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+        margin: 0;
+        padding-bottom: 5px;
+        text-shadow: 0 1px 0 #FFFFFF;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        color: #444444;
+        font-size: 12px;
+        margin-bottom: 8px;
+        line-height: 18px;
+        text-shadow: 0 1px 0 #FFFFFF;
+      }
+    }
+  }
+}

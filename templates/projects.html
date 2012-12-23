@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="masthead">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="masthead-inner">
+                    <h1>Our Works</h1>
+<!--
+                    <h2 id="heading-sub-title">
+                        <a href="#workFilter" data-toggle="collapse" class="accordion-toggle">
+                            <i class="icon-sort"></i> Filter our work
+                        </a>
+                    </h2>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end masthead-->
+<!--
+<div class="collapse" id="workFilter">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <ul class="nav nav-pills" id="filter">
+                    <li class="active"><a href="#">All</a></li>
+                    <li><a href="#">Recent</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Web Development</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!--end workFilter-->
+<section id="work">
+    <div class="container">
+        <div class="row">
+            <div id="work-list">
+                <article class="span4">
+                    <a class="image" href="#">
+                        <img alt="" src="static/img/tori01.png">
+                    </a>
+
+                    <div class="text">
+                        <h2>Tori</h2>
+
+                        <h3>This project aims to create an awesome Twitter Client for Ubuntu,
+                            taking care of every detail in the User Interface and the User
+                            Experience.</h3>
+                    </div>
+                </article>
+                <article class="span4">
+                    <a class="image" href="#">
+                        <img alt="" src="static/img/umedia01.png">
+                    </a>
+
+                    <div class="text">
+                        <h2>UMedia</h2>
+
+                        <h3>A really cool and lightweight media player, with a look and feel
+                            similar to the media application for mobile devices, and devices
+                            with touch screen.
+                            UMedia also provides integration with the Ubuntu One Music Store!</h3>
+                    </div>
+                </article>
+                <article class="span4">
+                    <a class="image" href="#">
+                        <img alt="" src="static/img/tvstalker01.png">
+                    </a>
+
+                    <div class="text">
+                        <h2>TvStalker</h2>
+
+                        <h3>Follow your Tv Shows, check the airdates, share your shows
+                            with your friends and never miss an episode again!</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end projects-->
+{% endblock %}
