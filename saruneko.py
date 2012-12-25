@@ -49,12 +49,21 @@ class ContactPage(webapp.RequestHandler):
         self.response.out.write(template.render(path, data))
 
 
+class UMediaPage(webapp.RequestHandler):
+
+    def get(self):
+        path = os.path.join(os.path.dirname(__file__),
+            "templates/umedia.html")
+        self.response.out.write(template.render(path, {}))
+
+
 def main():
     application = webapp.WSGIApplication([
         ('/', MainPage),
         ('/about', AboutPage),
         ('/projects', ProjectsPage),
         ('/contact', ContactPage),
+        ('/umedia', UMediaPage),
         #('/.*', NotFoundPageHandler),
         ], debug=True)
     run_wsgi_app(application)
